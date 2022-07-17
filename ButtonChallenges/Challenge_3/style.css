@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Oswald:wght@600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+}
+
+button:hover {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.6);
+  transform: translate(-3px, -3px);
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 120px;
+  color: white;
+  background-color: #20447b;
+  font-weight: 3px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans";
+}
