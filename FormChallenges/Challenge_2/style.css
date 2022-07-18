@@ -1,1 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Sansita Swashed", cursive;
+  background: linear-gradient(45deg, rgb(143, 201, 56), rgb(28, 121, 214));
+}
+
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.center {
+  position: relative;
+  background: white;
+  padding: 50px 50px;
+  border-radius: 15px;
+}
+
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid rgb(28, 121, 214);
+  padding: 10px;
+  color: black;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1rem;
+}
+
+.center .inputbox:last-child {
+  margin-bottom: 2px;
+}
+
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: rgb(28, 121, 214);
+  color: white;
+}
