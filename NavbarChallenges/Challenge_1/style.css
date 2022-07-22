@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(248, 245, 241);
+    /* height: 100vh; */
+}
+
+a {
+    text-decoration: none;
+    color: #98958A;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+a:hover{
+    color: #0AE3A9;
+}
+nav{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color:black;
+    display: block;
+    margin: auto;
+    margin-top: 25%;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
