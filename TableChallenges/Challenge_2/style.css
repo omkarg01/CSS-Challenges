@@ -1,1 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+body {
+    font-family: Indie Flower;
+}
+
+#myTable {
+    /* background-color: #7FFFD4; */
+}
+
+th,
+th,
+td {
+    background-color: #7FFFD4;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+th {
+    color: red;
+}
+
+.eng {
+    background-color: #8FB1CC;
+}
+
+caption{
+    font-weight: 600;
+    caption-side: bottom;
+    font-size: 25px;
+}
