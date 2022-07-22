@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;400&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,900;1,300;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3d79d0;
+    --yellow: #ffa500;
+    --white: #ffffff;
+    --dark-blue: #1C53C0;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--blue);
+    width: 60vw;
+    height: 70px;
+    /* border-radius: 1em; */
+    z-index: 1;
+    position: relative;
+    padding: 0 80px;
+}
+
+.nav>a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--white);
+    font-family: "Oswald";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.nav>a:hover {
+    background-color: var(--yellow);
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.wrap {
+    position: relative;
+}
+
+.wrap::before,
+.wrap::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    border: 35px solid var(--dark-blue);
+    z-index: -1;
+}
+
+.wrap::before {
+    left: -50px;
+    border-left-color: transparent;
+}
+
+.wrap::after {
+    right: -50px;
+    border-right-color: transparent;
+}
+
+
+.ribbon::before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    bottom: -20px;
+    left: 0px;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #04313F transparent transparent;
+}
+
+.ribbon::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    bottom: -20px;
+    right: 0;
+    border-width: 20px 20px 0 0;
+    border-color: #04313F transparent transparent transparent;
+}
