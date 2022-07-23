@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #6f7276;
+    --font: sans-serif;
+    --primary-blue: #5469D4;
+    --box-grey: #E3E8EE;
+    --dark-blue: #202D63;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    height: 100vh;
+    font-size: 1rem;
+    font-family: var(--font);
+    position: relative;
+    display: flex;
+}
+
+.polygon {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 80%);
+    background-image: linear-gradient(350deg, #e9ebed, white);
+}
+
+.blue3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0% 60%, 3% 59%, 3% 69%, 0% 70%); 
+    background-color: var(--dark-blue); 
+}
+.blue1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(8% 30%, 40% 20%, 40% 30%, 8% 40%); 
+    background-color: var(--primary-blue); 
+}
+.grey1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 25%, 80% 15%, 80% 25%, 50% 35%); 
+    background-color: var(--box-grey); 
+    /* border: 6px solid black; */
+}
+.grey2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 25.5%, 79.8% 15.5%, 79.8% 24.5%, 50% 34.5%); 
+    background-color: #F8F9F9; 
+}
+.grey3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(70% 51.7%, 84% 46%, 84% 55%, 70% 61%); 
+    background-color: var(--box-grey); 
+}
+.blue2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(50% 49%, 80% 38%, 80% 48%, 50% 59%); 
+    background-color: var(--primary-blue); 
+}
+.login-root {
+    height: fit-content;
+    width: 30%;
+    margin: auto auto;
+    z-index: 1;
+}
+
+.box-root {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.box-root h1 a {
+    color: var(--primary-blue);
+}
+
+.formbg {
+    background-color: white;
+    padding: 2rem 3rem;
+    padding-top: 3rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgb(138, 138, 138);
+}
+
+span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+form {
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+
+form div {
+    margin: 1rem 0;
+}
+
+
+.email input,
+.password input,
+.btn input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: 2px solid #c2c2c4;
+    margin-top: 0.3rem;
+}
+
+.password {
+    margin-top: 1.5rem;
+}
+
+.password>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.reset-pass {
+    margin: 0;
+}
+
+.reset-pass a {
+    color: var(--primary-blue);
+}
+
+.field {
+    margin-top: 1.5rem;
+}
+
+.btn input {
+    background-color: var(--primary-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+
+.field.ssolink {
+    text-align: center;
+}
+
+.ssolink {
+    font-size: 1rem;
+    color: var(--primary-blue);
+}
+
+.footer-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-link span {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.footer-link a {
+    color: var(--primary-blue);
+}
+
+.listing {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.listing span a {
+    font-size: 0.9rem;
+    color: var(--grey);
+}
